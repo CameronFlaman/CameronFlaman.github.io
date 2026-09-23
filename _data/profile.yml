@@ -5,7 +5,7 @@ navbar_name: "Cameron Flaman"
 positions:
 - name: Undergraduate Student
 - name: McGill University
-  logo: /assets/images/badges/mcgill-university-logo-png-transparent.png.webp  # Logo is optional
+  logo: /assets/images/badges/McGillLogo.png  # Logo is optional
 
 
 email: "cameron.flaman@mail.mcgill.ca"
