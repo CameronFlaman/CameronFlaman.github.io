@@ -1,6 +1,6 @@
 ---
 title:          "Serving Kundt: An Investigation Into the Acoustic Absorptivity of Charcuterie" 
-date:           2024-05-12 00:01:00 +0800
+date:           2024-04-29 00:01:00 +0800
 selected:       true
 semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
