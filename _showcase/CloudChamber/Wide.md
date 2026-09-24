@@ -1,7 +1,7 @@
 ---
 show: true
 width: 6
-2026-09-24 00:00:00 +0000
+date: 2026-09-24 00:00:00 +0000
 group: Cloud Chamber
 ---
 <div>
