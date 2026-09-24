@@ -10,5 +10,5 @@ authors:
   - Leo Mueller
   - Angus Greenwood
 links:
-  Read: {{ site.url }}/download/PHYS_339____The_Observation_of_Brownian_motion_on_Macroscopic_Spatial_and_Temporal_Scales.pdf.zip
+  Read: {{ https://cameronflaman.github.io }}/download/PHYS_339____The_Observation_of_Brownian_motion_on_Macroscopic_Spatial_and_Temporal_Scales.pdf.zip
 ---
