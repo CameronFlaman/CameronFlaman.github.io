@@ -4,7 +4,7 @@ width: 3
 group: Cloud Chamber
 ---
 <div>
-  <img {{ '/assets/images/empty_300x200.png'}}">
+  <img src="{{ 'assets/images/etc/cat1.jpg' | relative_url }}" class="img-fluid rounded-xl" >
   <div class="card-body">
     <p class="card-text">
       Fully-assembled cloud chamber.
