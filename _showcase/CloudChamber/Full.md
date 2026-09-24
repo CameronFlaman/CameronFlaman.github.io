@@ -1,6 +1,6 @@
 ---
 show: true
-width: 3
+width: 6
 date: 2026-09-24 00:00:00 +0000
 group: Cloud Chamber
 ---
