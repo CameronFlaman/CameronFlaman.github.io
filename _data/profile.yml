@@ -5,7 +5,7 @@ navbar_name: "Cameron Flaman"
 positions:
 - name: Undergraduate Student
 - name: McGill University
-  logo: /assets/images/badges/McGillLogo.png  # Logo is optional
+  logo: /assets/images/badges/McGillCres5.png  # Logo is optional
 
 
 email: "cameron.flaman@mail.mcgill.ca"
@@ -32,7 +32,7 @@ portrait_url: /assets/images/photos/TeamPhoto.jpeg
 
 education:
 - name: McGill University
-  logo: /assets/images/badges/McGillLogo.png
+  logo: /assets/images/badges/McGillCrest.png
   position: >- 
     Department of Physics <br/>
     BSc. Student
