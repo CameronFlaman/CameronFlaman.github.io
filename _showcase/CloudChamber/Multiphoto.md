@@ -13,7 +13,7 @@ images:
   desc: 3D Rendering of cloud chamber CAD Model.
 - src: "{{ 'assets/images/photos/Peltier Diagram.png' | relative_url }}" 
   desc: Schematic for the wiring if the Peltier Cooling modules.
-- src: src="{{ 'assets/images/photos/WiringSchematic.png' | relative_url }}"
+- src: "{{ 'assets/images/photos/WiringSchematic.png' | relative_url }}"
   desc: Schematic for the wiring of the complete cloud chamber.
 ---
 
