@@ -9,8 +9,10 @@
             {% for item in include.images %}
             <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
                 {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}
-                <div class="lazy always-load d-block rounded-xl" data-src="{{ item.src | relative_url }}" style="height: {{ include.height }};">
-                </div>
+                <img src="{{ item.src | relative_url }}"
+                     class="d-block rounded-xl w-100"
+                     alt="{{ item.desc | escape }}"
+                     style="height: {{ include.height }}; object-fit: cover;">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>{{ item.title }}</h5>
                     <p>{{ item.desc }}</p>
