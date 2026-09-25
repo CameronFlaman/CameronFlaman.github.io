@@ -7,5 +7,5 @@ group: Cloud Chamber
 images:
 - src: /assets/images/photos/CloseSHot.jpeg
 - src: /assets/images/photos/SideView.png
-{% include widgets/carousel.html id=page.id images=page.images height=page.height %}
 ---
+{% include widgets/carousel.html id=page.id images=page.images height=page.height %}
