@@ -12,5 +12,5 @@ authors:
   - Nathan Lippa
   - Jeanne Pouvraza
 links:
-  Read: "/download/PHYS_258_Final_Report_Flaman_Lippa_Mueller_Pouezevara.pdf.zip"
+  Read:"/download/PHYS_258_Final_Report_Flaman_Lippa_Mueller_Pouezevara.pdf.zip"
 ---
