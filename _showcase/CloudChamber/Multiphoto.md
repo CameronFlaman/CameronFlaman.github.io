@@ -5,7 +5,7 @@ date: 2021-09-12 00:01:00 +0800
 height: 295px
 group: Cloud Chamber
 images:
-- src:/assets/images/photos/PhotoTracking.png
+- src: /assets/images/photos/PhotoTracking.png
   desc: CAD Assembly of the "Cooling Stack".
 - src: /assets/images/photos/FinalCoolerStack.png
   desc: Phototracking algorithm recording tracks left by alpha and beta radiation.
