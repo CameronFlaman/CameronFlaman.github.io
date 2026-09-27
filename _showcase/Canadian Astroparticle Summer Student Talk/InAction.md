@@ -6,6 +6,4 @@ group: Canadian Astroparticle Summer Student Talk
 ---
 <div>
   <img src="{{ 'assets/images/photos/PresentationVibes.png' | relative_url }}" class="img-fluid rounded-xl" >
-  <div class="card-body">
-  </div>
 </div>
