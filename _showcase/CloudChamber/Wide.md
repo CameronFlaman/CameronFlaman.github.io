@@ -6,6 +6,6 @@ height: 295px
 group: Cloud Chamber
 images:
 - src: /assets/images/photos/CloseSHot.jpeg
-- src: /assets/images/photos/SideView.png
+- src: /assets/images/photos/CloudChamberWide.png
 ---
 {% include widgets/carousel.html id=page.id images=page.images height=page.height %}
