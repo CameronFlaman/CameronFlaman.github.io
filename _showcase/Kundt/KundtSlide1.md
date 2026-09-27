@@ -5,8 +5,7 @@ date: 2021-09-12 00:02:00 +0800
 height: 295px
 group: Kundt's Tube
 images:
-- src: /assets/images/photos/TopView.png
-- src: /assets/images/photos/SideView.png
+- src: /assets/images/photos/SetupSmall.png
 
 ---
 
