@@ -1,16 +1,13 @@
 ---
 show: true
 width: 4
-date: 2020-01-12 00:00:00 +0800
-group: Macroscopic Brownian Motion 
----
-<div>
-  <img data-src="{{ 'assets/images/covers/cover1.jpg' | relative_url }}" class="lazy w-100 rounded-xl" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+date: 2021-09-12 00:01:00 +0800
+height: 295px
+group: Macroscopic Brownian Motion
+images:
+- src: /assets/images/photos/TopView.png
+- src: /assets/images/photos/SideView.png
 
-  <div class="card-img-overlay" style="overflow: scroll; background: rgb(255,255,255,0.8)">
-    <h5 class="card-title">Image Lazyload</h5>
-    <p class="card-text">
-      This project saw the const...
-    </p>
-  </div>
-</div>
+---
+
+{% include widgets/carousel.html id=page.id images=page.images height=page.height %}
