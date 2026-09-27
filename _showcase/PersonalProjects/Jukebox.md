@@ -5,7 +5,8 @@ date: 2021-09-12 00:02:00 +0800
 height: 295px
 group: Personal Projects
 images:
-- src: /assets/images/photos/SetupSmall.png
+- src: /assets/images/photos/SmallJuke.png
+- src: /assets/images/photos/SmallAmpli.png
 
 ---
 
