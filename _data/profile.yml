@@ -19,17 +19,22 @@ short_bio_text_justify: false
 short_bio: >-
   <p>
     My name is Cameron, and im a fourth-year undergraduate student studying Physics at McGill. I am a passionate and motivated individual, 
-    who finds physics to be an infinitely exciting and rewarding world and seek to persue it further as a graduate student.My strengths and greatest interesting lie in hardware applications, I find that I have an exceptionally strong basis in construction and electronics and can quickly and effectively 
-    learn and execute new operations. Programming and software is also a field I have solid experience in, and have been able to perform
-    a variety of software tasks from challenging statistical analysis to developing live video tracking algorithms. 
+    who finds physics to be an infinitely exciting and rewarding world and seek to persue it further as a graduate student. My strengths 
+    and greatest interesting lie in hardware applications, I find that I have an exceptionally strong basis in construction and electronics and can quickly and effectively 
+    learn and execute new operations. Programming and software is also a field I have strong experience in, and have been able to perform
+    a variety of software tasks from challenging statistical analysis to developing live video tracking algorithms. I have a deep appreciation
+    for the intersection of these skills and theoretical understanding, and seek to persue physics further
   </p>
   <p>
     I deeply value my artistic and musical passions, and I find that the intersection of these ideas with my work in physics to be 
     unexpectedly useful and unbelivably exciting. As an example, my first exposure to circuitry was building equpment for my electric guitar with 
     my father, who has a background as an electrician. I have continually persued audio-electronics with a particular interest in
     the elegent, yet crazy world of analog audio processing. This has culminated in my most ambitious ongoing project which is the repair 
-    of a 1960s analog jukebox. Another such intersect has been challenging myself with philosophy courses throughout my undergraduate degree has challenged and honed my
-    writing and critical thinking skills. Furthermore, my background and enjoyement of theatre has made me a confident public presenter 
+    of a 1960s analog jukebox. Another such intersect has been challenging myself with philosophy courses throughout my undergraduate degree which honed my
+    writing, and critical thinking skills. Furthermore, my academic journey has always been accompanied by some sort of educational or outreach
+    aspect. In higschool I was a peer tutor and ski instructor, I was also a TEAM mentor for first-year chemistry courses; these experiences have culminated
+    in my most recent rpoject, which was to devellop a cloud chamber outreach tool motivated and informed by the all that i had practically learned
+    from these rewarding opportunities. Finally, my background and enjoyement of theatre has made me a confident public presenter 
     and an effective sicence communicator, so long as its in iambic pentameter... just kidding. 
   </p>
 
