@@ -11,7 +11,7 @@ group: Cloud Chamber
     <p class="card-text">
       This project, supervised by Thomas Brunner and funded by the Brunner Neutrino Laboratory and NSERC, involved the ground-up construction of a solid state, thermoelectrically-cooled cloud chamber for physics outreach. The cloud chamber produces a super-saturated environment of IPA gas, which condenses around the paths of ionizing radiation allowing for its visualization with the naked-eye. 
     </p>
-    <p>Being an outreach project, particular emphasis was placed on a tool that was affordable, consisted of commercial parts, portable and profession looking, and of course, effective. To realize this project, many 3D printing, milling, thermal assembly, wiring and programming tasks had to be performed and carefully assembled. The product of four months of work is a sleek cloud chamber, capable of revealing the invisible world of particle physics by capturing the trajectories of both alpha and beta particles. See the cloud chamber in-action <a href="URL" target="_blank" rel="noopener noreferrer">here</a>.
+    <p>Being an outreach project, particular emphasis was placed on a tool that was affordable, consisted of commercial parts, portable and profession looking, and of course, effective. To realize this project, many 3D printing, milling, thermal assembly, wiring and programming tasks had to be performed and carefully assembled. The product of four months of work is a sleek cloud chamber, capable of revealing the invisible world of particle physics by capturing the trajectories of both alpha and beta particles. See the cloud chamber in-action <a href="[URL]https://youtu.be/Udh7rXoVz9k?si=s-ZJ73Dj7AE-NfSK" target="_blank" rel="noopener noreferrer">here</a>.
     </p>
   </div>
 </div>
