@@ -6,7 +6,7 @@ height: 295px
 group: Personal Projects
 images:
 - src: /assets/images/photos/SetupSmall.png
-- desc: Re-wiring the speakers of old telephones to microphone XLR cables. For enjoyers of the low fidelity, scuzzy and feedback vocal effect.
+  desc: Re-wiring the speakers of old telephones to microphone XLR cables. For enjoyers of the low fidelity, scuzzy and feedback vocal effect.
 ---
 
 {% include widgets/carousel.html id=page.id images=page.images height=page.height %}
