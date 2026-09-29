@@ -5,7 +5,9 @@ date: 2021-09-10 00:02:00 +0800
 height: 295px
 group: Personal Projects
 images:
-- src: /assets/images/photos/SetupSmall.png
+- src: /assets/images/photos/PedalFront.png
+  desc: A "Harmonic Percolator" guitar effect pedal that I built with my father. Uses germanium diodes to enforce distorting harmonics by intentionally clipping the signal.
+- src: /assets/images/photos/PedalBack.png
   desc: A "Harmonic Percolator" guitar effect pedal that I built with my father. Uses germanium diodes to enforce distorting harmonics by intentionally clipping the signal.
 ---
 
