@@ -77,8 +77,12 @@ document.addEventListener('DOMContentLoaded', function() {
         var images = {{ include.images | jsonify }};
 
         carouselElement.addEventListener('slid.bs.carousel', function(e) {
-            if (images[e.to]) {
-                captionElement.textContent = images[e.to].desc || '';
+            var activeItem = carouselElement.querySelector('.carousel-item.active');
+            if (activeItem) {
+                var index = Array.from(carouselElement.querySelectorAll('.carousel-item')).indexOf(activeItem);
+                if (index >= 0 && images[index] && images[index].desc) {
+                    captionElement.textContent = images[index].desc;
+                }
             }
         });
     }
