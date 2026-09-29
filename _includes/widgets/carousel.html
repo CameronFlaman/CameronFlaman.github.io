@@ -76,15 +76,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (carouselElement && captionElement) {
         var images = {{ include.images | jsonify }};
 
-        carouselElement.addEventListener('slid.bs.carousel', function(e) {
-            var activeItem = carouselElement.querySelector('.carousel-item.active');
-            if (activeItem) {
-                var index = Array.from(carouselElement.querySelectorAll('.carousel-item')).indexOf(activeItem);
-                if (index >= 0 && images[index] && images[index].desc) {
-                    captionElement.textContent = images[index].desc;
-                }
+        function updateCaption() {
+            var activeIndex = $(carouselElement).find('.carousel-item.active').index();
+            if (activeIndex >= 0 && images[activeIndex] && images[activeIndex].desc) {
+                captionElement.textContent = images[activeIndex].desc;
             }
-        });
+        }
+
+        $(carouselElement).on('slid.bs.carousel', updateCaption);
+        updateCaption();
     }
 });
 </script>
