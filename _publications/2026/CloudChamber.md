@@ -8,5 +8,5 @@ cover: /assets/images/photos/CloseSHot.jpeg
 authors:
   - Cameron Flaman
 links:
-  Research Presentation (Powerpoint): https://github.com/luost26/academic-homepage
+  Presentation: "/download/CameronFlamanCASSTPresentation.pdf.zip"
 ---
