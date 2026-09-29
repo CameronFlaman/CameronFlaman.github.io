@@ -21,7 +21,7 @@
                      style="height: {{ include.height }}; object-fit: cover;">
                 {% if item.link %}</a>{% endif %}
 
-                <div class="carousel-caption-custom" style="display: {% if forloop.index == 1 %}flex{% else %}none{% endif %};">
+                <div class="carousel-caption-custom" style="display: flex;">
                     <div class="caption-box">{{ item.desc }}</div>
                 </div>
             </div>
@@ -67,22 +67,3 @@
         -webkit-backdrop-filter: blur(2px);
     }
 </style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const carouselId = '{{ include.id | slugify }}';
-    const carousel = document.getElementById(carouselId);
-
-    if (carousel) {
-        carousel.addEventListener('slide.bs.carousel', function(e) {
-            const slides = carousel.querySelectorAll('.carousel-item');
-            slides.forEach((slide, index) => {
-                const caption = slide.querySelector('.carousel-caption-custom');
-                if (caption) {
-                    caption.style.display = index === e.to ? 'flex' : 'none';
-                }
-            });
-        });
-    }
-});
-</script>
