@@ -6,6 +6,7 @@ height: 295px
 group: Kundt's Tube
 images:
 - src: /assets/images/photos/AbsorbancePlot.png
+  desc: The resultant absorbances of different charcuterie materials.
 
 ---
 
