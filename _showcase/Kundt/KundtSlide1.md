@@ -6,7 +6,7 @@ height: 295px
 group: Kundt's Tube
 images:
 - src: /assets/images/photos/SetupSmall.png
-
+  desc: The Kundt's tube setup pictured with bologna for scale.
 ---
 
 {% include widgets/carousel.html id=page.id images=page.images height=page.height %}
