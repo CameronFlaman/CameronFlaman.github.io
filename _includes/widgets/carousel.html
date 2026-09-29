@@ -13,10 +13,6 @@
                      class="d-block rounded-xl w-100"
                      alt="{{ item.desc | escape }}"
                      style="height: {{ include.height }}; object-fit: cover;">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>{{ item.title }}</h5>
-                    <p>{{ item.desc }}</p>
-                </div>
                 {% if item.link %}</a>{% endif %}
             </div>
             {% endfor %}
@@ -30,4 +26,29 @@
             <span class="sr-only">Next</span>
         </button>
     </div>
+    <!-- Description below carousel -->
+    <div id="{{ include.id | slugify }}-description" class="carousel-description" style="padding: 1rem; background-color: #f8f9fa; border: 1px solid #dee2e6; border-top: none; text-align: center;">
+        {% for item in include.images %}
+        <div class="description-item {% if forloop.index == 1 %}active{% endif %}" style="display: {% if forloop.index == 1 %}block{% else %}none{% endif %};">
+            <p style="margin: 0; color: #333; font-size: 0.95rem;">{{ item.desc }}</p>
+        </div>
+        {% endfor %}
+    </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselId = '{{ include.id | slugify }}';
+    const carousel = document.getElementById(carouselId);
+    const descriptionContainer = document.getElementById(carouselId + '-description');
+    
+    if (carousel && descriptionContainer) {
+        carousel.addEventListener('slide.bs.carousel', function(e) {
+            const descItems = descriptionContainer.querySelectorAll('.description-item');
+            descItems.forEach((item, index) => {
+                item.style.display = index === e.to ? 'block' : 'none';
+            });
+        });
+    }
+});
+</script>
