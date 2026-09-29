@@ -5,7 +5,6 @@ date: 2021-09-10 00:02:00 +0800
 height: 295px
 group: Personal Projects
 images:
-images:
 - src: /assets/images/photos/SetupSmall.png
 - desc: A little enterprise of mine: Re-wiring the speakers of old telephones to microphone XLR cables. For enjoyers of the low fidelity, scuzzy and feedback vocal effect.
 ---
