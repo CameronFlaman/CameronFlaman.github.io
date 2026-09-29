@@ -7,9 +7,9 @@ group: Cloud Chamber
 id: cloud-chamber-carousel
 images:
 - src: /assets/images/photos/PhotoTracking.png
-  desc: CAD Assembly of the "Cooling Stack".
-- src: /assets/images/photos/FinalCoolerStack.png
   desc: Phototracking algorithm recording tracks left by alpha and beta radiation.
+- src: /assets/images/photos/FinalCoolerStack.png
+  desc: CAD Assembly of the "Cooling Stack".
 - src: /assets/images/photos/3DRender.png
   desc: 3D Rendering of cloud chamber CAD Model.
 - src: /assets/images/photos/Peltier Diagram.png
