@@ -1,10 +1,10 @@
 <div>
-    <div id="{{ include.id | slugify }}" class="carousel slide" data-ride="carousel" data-bs-ride="carousel">
+    <div id="{{ include.id | slugify }}" class="carousel slide" data-ride="carousel">
         <div class="carousel-indicators">
             {% for item in include.images %}
             <button type="button"
-                    data-bs-target="#{{ include.id | slugify }}"
-                    data-bs-slide-to="{{ forloop.index0 }}"
+                    data-target="#{{ include.id | slugify }}"
+                    data-slide-to="{{ forloop.index0 }}"
                     aria-label="Show slide {{ forloop.index }}"
                     {% if forloop.index == 1 %}class="active"{% endif %}>
             </button>
@@ -24,17 +24,16 @@
             {% endfor %}
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#{{ include.id | slugify }}" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-target="#{{ include.id | slugify }}" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#{{ include.id | slugify }}" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-target="#{{ include.id | slugify }}" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </button>
     </div>
 
-    <!-- Caption displayed below carousel -->
     <div class="carousel-caption-below">
         <div class="caption-box" id="{{ include.id | slugify }}-caption">
             {% for item in include.images %}
@@ -70,17 +69,16 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const carouselId = '{{ include.id | slugify }}';
-    const carouselElement = document.getElementById(carouselId);
-    const captionElement = document.getElementById(carouselId + '-caption');
+    var carouselId = '{{ include.id | slugify }}';
+    var carouselElement = document.getElementById(carouselId);
+    var captionElement = document.getElementById(carouselId + '-caption');
 
     if (carouselElement && captionElement) {
-        const images = {{ include.images | jsonify }};
-        
-        // Use Bootstrap 5 event name
+        var images = {{ include.images | jsonify }};
+
         carouselElement.addEventListener('slid.bs.carousel', function(e) {
             if (images[e.to]) {
-                captionElement.textContent = images[e.to].desc;
+                captionElement.textContent = images[e.to].desc || '';
             }
         });
     }
