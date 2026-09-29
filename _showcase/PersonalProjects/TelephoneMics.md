@@ -5,8 +5,9 @@ date: 2021-09-10 00:02:00 +0800
 height: 295px
 group: Personal Projects
 images:
+images:
 - src: /assets/images/photos/SetupSmall.png
-- desc: A little enterprise of mine: Re-wiring the speakers of old telephones to microphone XLR cables. For enjoyers of the low fidelity, scuzzy and feedback vocal effect.
+- desc: A "Harmonic Percolator" guitar effect pedal that I built with my father. Uses germanium diodes to enforce distorting harmonics by intentionally clipping the signal.
 ---
 
 {% include widgets/carousel.html id=page.id images=page.images height=page.height %}
