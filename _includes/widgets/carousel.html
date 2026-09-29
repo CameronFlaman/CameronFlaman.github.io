@@ -2,9 +2,15 @@
     <div id="{{ include.id | slugify }}" class="carousel slide" data-ride="carousel">
         <div class="carousel-indicators">
             {% for item in include.images %}
-            <button type="button" data-target="#{{ include.id | slugify }}" data-slide-to="{{ forloop.index0 }}" aria-label="Show slide {{ forloop.index }}" {% if forloop.index == 1 %}class="active"{% endif %}></button>
+            <button type="button"
+                    data-target="#{{ include.id | slugify }}"
+                    data-slide-to="{{ forloop.index0 }}"
+                    aria-label="Show slide {{ forloop.index }}"
+                    {% if forloop.index == 1 %}class="active"{% endif %}>
+            </button>
             {% endfor %}
         </div>
+
         <div class="carousel-inner" style="height: {{ include.height }};">
             {% for item in include.images %}
             <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
@@ -14,9 +20,14 @@
                      alt="{{ item.desc | escape }}"
                      style="height: {{ include.height }}; object-fit: cover;">
                 {% if item.link %}</a>{% endif %}
+
+                <div class="carousel-caption-custom" style="display: {% if forloop.index == 1 %}flex{% else %}none{% endif %};">
+                    <div class="caption-box">{{ item.desc }}</div>
+                </div>
             </div>
             {% endfor %}
         </div>
+
         <button class="carousel-control-prev" type="button" data-target="#{{ include.id | slugify }}" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -26,26 +37,50 @@
             <span class="sr-only">Next</span>
         </button>
     </div>
-    <div id="{{ include.id | slugify }}-description" class="carousel-description" style="padding: 1rem; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.5rem; text-align: center; margin-top: 0.5rem;">
-        {% for item in include.images %}
-        <div class="description-item" style="display: {% if forloop.index == 1 %}block{% else %}none{% endif %};">
-            <p style="margin: 0; color: #333; font-size: 0.95rem;">{{ item.desc }}</p>
-        </div>
-        {% endfor %}
-    </div>
 </div>
+
+<style>
+    .carousel-item {
+        position: relative;
+    }
+
+    .carousel-caption-custom {
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        bottom: 0.9rem;
+        justify-content: center;
+        pointer-events: none;
+    }
+
+    .caption-box {
+        max-width: 80%;
+        background: rgba(255, 255, 255, 0.72);
+        color: #1f1f1f;
+        border-radius: 999px;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+</style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const carouselId = '{{ include.id | slugify }}';
     const carousel = document.getElementById(carouselId);
-    const descriptionContainer = document.getElementById(carouselId + '-description');
-    
-    if (carousel && descriptionContainer) {
+
+    if (carousel) {
         carousel.addEventListener('slide.bs.carousel', function(e) {
-            const descItems = descriptionContainer.querySelectorAll('.description-item');
-            descItems.forEach((item, index) => {
-                item.style.display = index === e.to ? 'block' : 'none';
+            const slides = carousel.querySelectorAll('.carousel-item');
+            slides.forEach((slide, index) => {
+                const caption = slide.querySelector('.carousel-caption-custom');
+                if (caption) {
+                    caption.style.display = index === e.to ? 'flex' : 'none';
+                }
             });
         });
     }
