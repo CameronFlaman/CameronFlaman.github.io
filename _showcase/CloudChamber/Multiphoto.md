@@ -4,6 +4,7 @@ width: 4
 date: 2021-09-12 00:01:00 +0800
 height: 295px
 group: Cloud Chamber
+id: cloud-chamber-carousel
 images:
 - src: /assets/images/photos/PhotoTracking.png
   desc: CAD Assembly of the "Cooling Stack".
